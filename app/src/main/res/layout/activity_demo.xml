@@ -6,17 +6,5 @@
     android:layout_height="match_parent"
     tools:context=".Demo">
 
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bottomAppBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        app:backgroundTint="@color/black"/>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/shopping_cart_24"
-        app:layout_anchor="@id/bottomAppBar"
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
