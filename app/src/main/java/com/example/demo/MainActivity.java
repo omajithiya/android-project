@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayList<CategoryDomain> Category=new ArrayList<>();
         Category.add(new CategoryDomain("Cake","cat_1"));
-        Category.
+        Category.add(new CategoryDomain("Cake","cat_1"));
+        Category.add(new CategoryDomain("Cake","cat_1"));
+        Category.add(new CategoryDomain("Cake","cat_1"));
+        Category.add(new CategoryDomain("Cake","cat_1"));
+        Category.add(new CategoryDomain("Cake","cat_1"));
     }
 }
