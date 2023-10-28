@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.example.demo.Adaptor.CategoryAdaptor;
 import com.example.demo.Domain.CategoryDomain;
 
 import java.util.ArrayList;
@@ -28,12 +29,13 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewCategoryList.setLayoutManager(linearLayoutManager);
 
         ArrayList<CategoryDomain> Category=new ArrayList<>();
-        Category.add(new CategoryDomain("Cake","cat_1"));
-        Category.add(new CategoryDomain("Cake","cat_1"));
-        Category.add(new CategoryDomain("Cake","cat_1"));
-        Category.add(new CategoryDomain("Cake","cat_1"));
-        Category.add(new CategoryDomain("Cake","cat_1"));
-        Category.add(new CategoryDomain("Cake","cat_1"));
-        
+        Category.add(new CategoryDomain("Birthday","cat_1"));
+        Category.add(new CategoryDomain("Anniversory","cat_2"));
+        Category.add(new CategoryDomain("Regular","cat_3"));
+        Category.add(new CategoryDomain("Photo","cat_4"));
+        Category.add(new CategoryDomain("Designer","cat_5"));
+
+        adapter=new CategoryAdaptor(Category);
+        recyclerViewCategoryList.setAdapter(adapter);
     }
 }
