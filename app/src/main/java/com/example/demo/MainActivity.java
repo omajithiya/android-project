@@ -34,5 +34,6 @@ public class MainActivity extends AppCompatActivity {
         Category.add(new CategoryDomain("Cake","cat_1"));
         Category.add(new CategoryDomain("Cake","cat_1"));
         Category.add(new CategoryDomain("Cake","cat_1"));
+        
     }
 }
