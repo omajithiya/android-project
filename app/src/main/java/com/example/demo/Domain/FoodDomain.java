@@ -22,6 +22,9 @@ public class FoodDomain {
         this.numberInCart = numberInCart;
     }
 
+    public FoodDomain(String majithiya, String cakeDp, String description, float fee) {
+    }
+
     public String getTitle() {
         return title;
     }
