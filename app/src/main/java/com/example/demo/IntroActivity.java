@@ -8,18 +8,19 @@ import android.os.Bundle;
 import android.view.View;
 
 public class IntroActivity extends AppCompatActivity {
-    private ConstraintLayout startBtn;
+     ConstraintLayout start;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
 
-        startBtn=findViewById(R.id.startBtn);
-        startBtn.setOnClickListener(new View.OnClickListener() {
+        start=(ConstraintLayout) findViewById(R.id.startBtn);
+
+        start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(IntroActivity.this,MainActivity.class));
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
         });
     }
