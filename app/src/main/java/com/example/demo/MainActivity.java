@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         recyclerViewCategory();
-        recyclerViewPopular();
+        //recyclerViewPopular();
     }
 
     private void recyclerViewCategory() {
@@ -42,16 +42,16 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewCategoryList.setAdapter(adapter);
     }
 
-    private void recyclerViewPopular(){
-        LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
-        recyclerViewPopularList=findViewById(R.id.recyclerView2);
-        recyclerViewPopularList.setLayoutManager(linearLayoutManager);
-
-        ArrayList<FoodDomain> foodList=new ArrayList<>();
-        foodList.add(new FoodDomain("majithiya","cake_dp","kem che,majama ne,hu to thik chu taem bolo",96));
-
-
-        adapter2 =new PopularAdaptor(foodList);
-        recyclerViewPopularList.setAdapter(adapter2);
-    }
+//    private void recyclerViewPopular(){
+//        LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
+//        recyclerViewPopularList=findViewById(R.id.recyclerView2);
+//        recyclerViewPopularList.setLayoutManager(linearLayoutManager);
+//
+//        ArrayList<FoodDomain> foodList=new ArrayList<>();
+//        foodList.add(new FoodDomain("majithiya","cake_dp","kem che,majama ne,hu to thik chu taem bolo",96));
+//
+//
+//        adapter2 =new PopularAdaptor(foodList);
+//        recyclerViewPopularList.setAdapter(adapter2);
+//    }
 }
