@@ -46,19 +46,19 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="268dp"
+        android:layout_width="286dp"
         android:layout_height="102dp"
-        android:layout_marginTop="-22dp"
-        android:layout_marginBottom="70dp"
-        android:rotation="10"
-        android:rotationX="25"
-        android:rotationY="-10"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="65dp"
+        android:rotation="8"
+        android:rotationX="10"
+        android:rotationY="-11"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintHorizontal_bias="0.69"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:srcCompat="@drawable/ok_1" />
+        tools:srcCompat="@drawable/square" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/startBtn"
