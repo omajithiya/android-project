@@ -35,7 +35,7 @@ public class PopularAdaptor extends RecyclerView.Adapter<PopularAdaptor.Viewhold
         holder.title.setText(popularFood.get(position).getTitle());
         holder.fee.setText(String.valueOf(popularFood.get(position).getFee()));
 
-        int drawableResourceId=holder.itemView.getContext().getResources().getIdentifier(popularFood.get(position).getPic(),"drawable",holder.itemView.getContext().getPackageName());
+        int drawableResourceId = holder.itemView.getContext().getResources().getIdentifier(popularFood.get(position).getPic(), "drawable", holder.itemView.getContext().getPackageName());
 
         Glide.with(holder.itemView.getContext())
                 .load(drawableResourceId)
@@ -47,9 +47,8 @@ public class PopularAdaptor extends RecyclerView.Adapter<PopularAdaptor.Viewhold
         return popularFood.size();
     }
 
-    public class Viewholder extends RecyclerView.ViewHolder {
-        TextView title;
-        TextView fee;
+    public static class Viewholder extends RecyclerView.ViewHolder {
+        TextView title,fee;
         ImageView pic;
         TextView addBtn;
         public Viewholder(@NonNull View itemView) {
